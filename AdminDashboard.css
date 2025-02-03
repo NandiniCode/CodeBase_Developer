@@ -1,0 +1,9 @@
+.admin-dashboard {
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Optional: add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+    max-width: 1200px; /* Optional: limit the maximum width */
+    margin: 20px auto; /* Center the dashboard */
+  }
+  

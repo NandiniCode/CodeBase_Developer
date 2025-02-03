@@ -1,0 +1,265 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Grid layout for stations */
+.stations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed number of columns (3) */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.station-card {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Station card layout */
+.station-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Button for deleting a station */
+.delete-button {
+    background-color: #dc3545; /* Bootstrap danger color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker shade for hover */
+}
+
+.rental-stations-container {
+    padding: 20px; /* Add some padding for better layout */
+    background-color: #f8f8f8; /* Light background color for contrast */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container on the page */
+  }
+  
+  h1 {
+    color: black; /* Set the header color to black */
+  }
+  
+  .error-message {
+    color: red; /* Keep error messages red */
+  }
+  
+  .form-container {
+    margin-bottom: 20px; /* Add spacing below the form */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align form elements */
+    width: 100%; /* Ensure the form takes full width */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%; /* Full width for input fields */
+    max-width: 400px; /* Optional: limit the maximum width */
+    padding: 10px; /* Add padding for better usability */
+    margin: 5px 0; /* Add margin for spacing */
+    border: 1px solid #ccc; /* Light border for input fields */
+  }
+  
+  button {
+    padding: 5px 10px; /* Decrease padding for a smaller button */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color for buttons */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    margin: 5px 0; /* Add margin for spacing */
+    font-size: 14px; /* Decrease font size */
+  }
+  
+  button:disabled {
+    background-color: #ccc; /* Disable color */
+  }
+  
+  .stations-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards in the grid */
+    width: 100%; /* Ensure grid takes full width */
+  }
+  
+  .station-card {
+    background-color: white; /* Card background color */
+    padding: 15px; /* Padding inside the card */
+    border: 1px solid #ddd; /* Light border for card */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: calc(80% - 20px); /* Adjust width for responsiveness */
+  }
+  
+  .station-card h3,
+  .station-card p {
+    color: black; /* Set card text color to black */
+  }
+  .edit-button {
+    padding: 5px 10px; /* Consistent button size */
+    background-color: #28a745; /* Green color for edit */
+    color: white; /* Text color for buttons */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    margin: 5px 0; /* Add margin for spacing */
+    font-size: 14px; /* Font size */
+  }  
+
+
+  /* General styles for the rental stations */
+.rental-stations-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+}
+
+/* Form styles */
+.form-container {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Styles for the rental stations grid */
+.stations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Station card styles */
+.station-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Umbrella list styles */
+h2 {
+    color: #333; /* Dark color for headers */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin: 5px 0;
+    background-color: #ffffff; /* White background for list items */
+    color: #333; /* Dark text color for visibility */
+}
+
+/* Loading message styles */
+.loading-message {
+    color: #007bff; /* Blue color for loading messages */
+}
